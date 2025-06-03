@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="icon-youtube.png">
+    <script src="https://kit.fontawesome.com/c2af9f5fba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #181818;
+        }
+
+        .youtube-header {
+            display: flex;
+            align-items: center;
+            background: #000;
+            padding: 8px 16px;
+            border-bottom: 1px solid #222;
+            background-attachment: fixed;
+            position: fixed;
+            width: 100%;
+        }
+
+        .menu-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 22px;
+            margin-right: 16px;
+        }
+
+        .youtube-logo {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+
+        }
+
+        .youtube-name {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            margin-right: 32px;
+            letter-spacing: -1px;
+        }
+
+        .header-search {
+            padding: 10px;
+            display: flex;
+            flex: 1;
+            max-width: 500px;
+            margin-right: 24px;
+            margin-left: 300px;
+        }
+
+        .search-bar {
+            flex: 1;
+            padding: 12px 12px;
+            border: 1px solid #333;
+            border-radius: 25px 0 0 25px;
+            background: #121212;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-btn {
+            background: #222;
+            border: 1px solid #333;
+            border-left: none;
+            color: #fff;
+            padding: 0 18px;
+            border-radius: 0 25px 25px 0;
+            font-size: 18px;
+
+        }
+
+        .mic-btn {
+            background: #222;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            margin-right: 16px;
+            border-radius: 50%;
+            padding: 10px;
+            width: 36px;
+            height: 38px;
+            text-align: center;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-btns {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background-color: #000;
+        }
+
+        .user {
+            background: #333;
+            color: #fff;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+
+        }
+
+        .nav-button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+        }
+
+        figcaption {
+            color: white;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .top-btn {
+            background: none;
+            border: 1px solid #333;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            margin-left: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="youtube-header" style="background-attachment: fixed;">
+        <i class="fa-solid fa-bars menu-btn"></i><i class="fa-brands fa-youtube"
+            style="color: red;font-size: 28px;"></i>&nbsp;
+        <span class="youtube-name">YouTube<sup style="font-size: 18px; font-weight: 100;color:grey">IN</sup></span>
+
+        <form class="header-search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <button class="mic-btn"><i class="fa-solid fa-microphone"></i></button>
+
+        <div class="header-actions">
+            <button class="header-btns"
+                style="margin-left: 100px;background: #222; padding: 10px; border-radius:25px;"><i
+                    class="fa-solid fa-plus"></i><span style="font-weight: 100;">Create</span></button>
+            <button class="header-btns" style="margin-left: 50px"><i class="fa-regular fa-bell"></i></i></button>
+            <span class="user" style="margin-left: 40px">B</span>
+        </div>
+        <br>
+
+    </header>
+    <iframe src="nav.html" frameborder="0" scrolling="yes"
+        style="width:280px;height: 800px;margin-top: -15px;margin-left: -10px;"></iframe>
+
+    <nav style="padding:20px;color: white;background-color: black;display:flex; margin-left: 280px;margin-top: -720px;">
+        <ul:li><button class="top-btn">All</button></ul:li>
+        <ul:li><button class="top-btn">Music</button></ul:li>
+        <ul:li><button class="top-btn">Telugu Cinema</button></ul:li>
+        <ul:li><button class="top-btn">TED</button></ul:li>
+        <ul:li><button class="top-btn">Mixes</button></ul:li>
+        <ul:li><button class="top-btn">Podcasts</button></ul:li>
+        <ul:li><button class="top-btn">News</button></ul:li>
+        <ul:li><button class="top-btn">Comedy</button></ul:li>
+        <ul:li><button class="top-btn">Entertainment</button></ul:li>
+    </nav>
+    <div style="background-color: black">
+        <div class="video" style="margin-left:300px;display:flex;margin-top: 0px;">
+            <figure>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/P2ZmbsOQkbE?si=dGdYLmtOgyj2NI8s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption class="captions">Video 1</figcaption>
+            </figure>
+            <figure>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/ztojZRCxZDc?si=T_X9oeFHL67CgfRM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Video 2</figcaption>
+            </figure>
+            <figure>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/zIwLWfaAg-8?si=J6HQ_H7eGekuxTHS"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Video 3</figcaption>
+            </figure>
+        </div>
+        <div class="video" style="margin-left:300px;display:flex;">
+            <figure>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/6Af6b_wyiwI?si=jeZlEuHBr9mY9X2x"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Video 4</figcaption>
+            </figure>
+            <figure>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/arj7oStGLkU?si=5FDyLp2_L7AYuQ5x"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Video 5</figcaption>
+            </figure>
+            <figure>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/eIho2S0ZahI?si=QZeopl7GjT5Swqrx"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Video 6</figcaption>
+            </figure>
+        </div>
+        <div class="video" style="margin-left:300px;display:flex;margin-top: 60px;">
+            <figure>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/P2ZmbsOQkbE?si=dGdYLmtOgyj2NI8s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption class="captions">Video 1</figcaption>
+            </figure>
+            <figure>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/ztojZRCxZDc?si=T_X9oeFHL67CgfRM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Video 2</figcaption>
+            </figure>
+            <figure>
+                <iframe width="300" height="180" src="https://www.youtube.com/embed/zIwLWfaAg-8?si=J6HQ_H7eGekuxTHS"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>Video 3</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+
+</html>
