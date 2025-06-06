@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .main-heading {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightblue;
+            color: white;
+            padding: 20px;
+        } */
+
+        .nav-item {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .logo {
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightblue;
+            padding-left: 20px;
+            padding-right: 5px;
+        }
+
+        .landing-image {
+            width: 100%;
+            height: 100vh;
+            display: block;
+            object-fit: cover;
+            position: relative;
+            top: -16px;
+        }
+
+        .landing-heading {
+            position: absolute;
+            z-index: 4;
+            top: 100px;
+            left: 150px;
+            color: white;
+            font-size: 50px;
+        }
+
+        .landing-subheading {
+            position: absolute;
+            z-index: 4;
+            top: 200px;
+            left: 480px;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .company-name {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 5px;
+            font-size: 70px;
+        }
+
+        footer {
+            background-color: lightblue;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .fotter-heading {
+            position: relative;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
+        }
+
+        .Contact-div {
+            border: 1px solid #333;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>HTC</h1>
+            </div>
+            <div class="nav-list">
+                <ul type="none" class="nav-list">
+                    <li class="nav-item"><a href="HTC.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="Treks.html" class="nav-link">Treks</a></li>
+                    <li class="nav-item"><a href="Trips.html" class="nav-link">Trips</a></li>
+                    <li class="nav-item"><a href="About.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div style="display: flex;flex-direction: row;justify-content:space-around;margin-top: 20px;height: 350px">
+            <div class="Contact-div">
+                <h2 style="color: #333; text-align: center;">Contact Details</h2>
+                <table style="width:100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 8px; font-weight: bold;">Address:</td>
+                        <td style="padding: 8px;">
+                            123, Trekker Street, Hyderabad, Telangana, India<br>
+                            <address style="margin:0;">
+                                Tech Jobs (Dr Reddy's Foundation)<br>
+                                X, Miyapur Rd, Nandini Nagar,<br>
+                                Ambedkar Nagar, Bachupally,<br>
+                                Hyderabad, Telangana 500049
+                            </address>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; font-weight: bold;">Email:</td>
+                        <td style="padding: 8px;">
+                            <a href="mailto:info@htc.com" style="color: #333;">info@htc.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; font-weight: bold;">Phone:</td>
+                        <td style="padding: 8px;">+91-9876543210</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="map" style="margin-left: 20px; width: 400px; height: 400px;padding: 20px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.2677810951436!2d78.35620007501264!3d17.494726083410953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9300472c8303%3A0x4321b9c6e05b642d!2sTech%20Jobs%20(Dr%20Reddy&#39;s%20Foundation)!5e0!3m2!1sen!2sin!4v1749130621603!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div>
+            <form
+                style="max-width: 400px; margin: 30px auto; padding: 20px; border: 1px solid #333; border-radius: 8px; background: #f9f9f9;">
+                <h2 style="text-align:center; color:#333;">Contact Us</h2>
+                <div style="margin-bottom: 15px;">
+                    <label for="name" style="display:block; margin-bottom:5px; color:#333;">Name:</label>
+                    <input type="text" id="name" name="name" required
+                        style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="email" style="display:block; margin-bottom:5px; color:#333;">Email:</label>
+                    <input type="email" id="email" name="email" required
+                        style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="message" style="display:block; margin-bottom:5px; color:#333;">Message:</label>
+                    <textarea id="message" name="message" rows="4" required
+                        style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;"></textarea>
+                </div>
+                <div style="text-align:center;">
+                    <button type="submit"
+                        style="background-color:lightblue; color:#333; padding:10px 20px; border:none; border-radius:4px; font-size:16px; cursor:pointer;">Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h1 class="fotter-heading">HTC</h1>
+        <p style="text-align: center; font-family: 'Courier New', Courier, monospace; color: #333;">
+            &copy; 2023 Hyderabad Trekking Company
+        </p>
+        <p style="text-align: center; font-family: 'Courier New', Courier, monospace; color: #333; margin: 5px 0;">
+            Email: <a href="mailto:info@htc.com" style="color: #333; text-decoration: underline;">info@htc.com</a> |
+            Phone: +91-9876543210
+        </p>
+        <p style="text-align: center; font-family: 'Courier New', Courier, monospace; color: #333; margin: 5px 0;">
+            Follow us:
+            <a href="#" style="color: #333; text-decoration: underline;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"
+                    style="width:18px; height:18px; vertical-align:middle; margin-right:5px;">
+                Instagram
+            </a> |</a>
+            <a href="#" style="color: #333; text-decoration: underline;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"
+                    style="width:18px; height:18px; vertical-align:middle; margin-right:5px;">
+                Facebook
+            </a> |
+            <a href="#" style="color: #333; text-decoration: underline;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"
+                    style="width:18px; height:18px; vertical-align:middle; margin-right:5px;">
+                Twitter
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
