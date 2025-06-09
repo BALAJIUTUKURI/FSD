@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .card {
+            width: 300px;
+            height: 300px;
+            border-top: 5px solid #007bff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 15px;
+            margin: 20px;
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: #007bff;
+            margin-bottom: 10px;
+            background-color: rgba(0, 123, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+
+        }
+
+        .card-heading {
+            font-size: 26px;
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        .card-content {
+            font-size: 20px;
+            color: #4a5568;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background-color: rgba(0, 123, 255, 0.05);
+            transition: 1s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            width: 65vw;
+            height: 80vh;
+            margin-left: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div style="display:flex;flex-direction:column;align-items:center;">
+            <div class="card-container">
+                <h1 style="text-align: center;font-size: 40px;margin-bottom: 20px;">Why Learn With Us</h1>
+                <p style="text-align: center;font-size: 20px;">Experience the future of web development education</p>
+                <div style="display: grid;grid-template-columns: 4fr 4fr 4fr;">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class=" fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="card-heading">Pure Magic of CSS</h3>
+                        <p class="card-content">Learn the art of CSS and create stunning, responsive designs that
+                            captivate
+                            your
+                            audience.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class=" fa-solid fa-book-open"></i>
+                        </div>
+                        <h3 class="card-heading">Comprehensive Curriculum</h3>
+                        <p class="card-content">Complete coverage of HTML5 and CSS3 from fundamentals to advanced
+                            techniques.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class=" fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="card-heading">Interactive Learning</h3>
+                        <p class="card-content">See concepts come to life with our visual, interactive demonstrations
+                            that
+                            run
+                            in
+                            real-time.</p>
+                    </div>
+                </div>
+                <div style="display: grid;grid-template-columns: 4fr 4fr 4fr;">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class=" fa-solid fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="card-heading">Fully Responsive</h3>
+                        <p class="card-content">Learn on any device. Our platform adapts perfectly from mobile to
+                            desktop.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class=" fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="card-heading">Cutting-Edge Techniques</h3>
+                        <p class="card-content">Learn modern CSS features like Grid, Flexbox, variables, animations, and
+                            more.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class=" fa-solid fa-palette"></i>
+                        </div>
+                        <h3 class="card-heading">Visual Design Focus</h3>
+                        <p class="card-content">Develop an eye for beautiful, functional design with our design-focused
+                            curriculum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: block; flex-direction: column;margin-top: 250px;margin-left: 20px;"></div>
+        <div class="join-community" style="background-color: #f8f9fa;padding: 40px 20px;">
+            <h1 style="text-align: center;font-size: 40px;margin-bottom: 20px;">Join Our Community</h1>
+            <p style="text-align: center;font-size: 20px;">Connect with fellow learners and industry experts</p>
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <button
+                    style="background-color: #007bff;color: white;padding: 10px 20px;border-radius: 5px;border: none;cursor: pointer;font-size: 18px;">
+                    Join Now
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

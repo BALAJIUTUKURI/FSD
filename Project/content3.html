@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Layout Systems -->
+    <div class="demo-content" id="layout-content">
+        <div class="demo-section">
+            <h3>Flexbox Layout</h3>
+
+            <div class="demo-card">
+                <div class="demo-header">
+                    <h4 class="demo-title"><i class="fas fa-boxes"></i> Flex Container</h4>
+                </div>
+                <div class="code-container">
+                    <pre><code>.flex-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.flex-item {
+  padding: 1.5rem;
+  background: #4361ee;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}</code></pre>
+                </div>
+                <div class="output-container">
+                    <div
+                        style="display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap; padding: 1rem; background: #f1f5f9; border-radius: 8px;">
+                        <div
+                            style="padding: 1.5rem; background: #4361ee; color: white; border-radius: 8px; text-align: center;">
+                            Item 1</div>
+                        <div
+                            style="padding: 1.5rem; background: #4361ee; color: white; border-radius: 8px; text-align: center;">
+                            Item 2</div>
+                        <div
+                            style="padding: 1.5rem; background: #4361ee; color: white; border-radius: 8px; text-align: center;">
+                            Item 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h3>CSS Grid Layout</h3>
+
+            <div class="demo-card">
+                <div class="demo-header">
+                    <h4 class="demo-title"><i class="fas fa-th"></i> Grid Layout</h4>
+                </div>
+                <div class="code-container">
+                    <pre><code>.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.grid-item {
+  padding: 1.5rem;
+  background: #7209b7;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}</code></pre>
+                </div>
+                <div class="output-container">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 1rem; background: #f1f5f9; border-radius: 8px;">
+                        <div
+                            style="padding: 1.5rem; background: #7209b7; color: white; border-radius: 8px; text-align: center;">
+                            Item 1</div>
+                        <div
+                            style="padding: 1.5rem; background: #7209b7; color: white; border-radius: 8px; text-align: center;">
+                            Item 2</div>
+                        <div
+                            style="padding: 1.5rem; background: #7209b7; color: white; border-radius: 8px; text-align: center;">
+                            Item 3</div>
+                        <div
+                            style="padding: 1.5rem; background: #7209b7; color: white; border-radius: 8px; text-align: center;">
+                            Item 4</div>
+                        <div
+                            style="padding: 1.5rem; background: #7209b7; color: white; border-radius: 8px; text-align: center;">
+                            Item 5</div>
+                        <div
+                            style="padding: 1.5rem; background: #7209b7; color: white; border-radius: 8px; text-align: center;">
+                            Item 6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

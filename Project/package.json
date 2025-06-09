@@ -1,0 +1,11 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "CodeMastery(Learning Portal) Using HTML&CSS Only!! ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

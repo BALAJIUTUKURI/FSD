@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Advanced Techniques -->
+    <div class="demo-content" id="advanced-content">
+        <div class="demo-section">
+            <h3>CSS Variables</h3>
+
+            <div class="demo-card">
+                <div class="demo-header">
+                    <h4 class="demo-title"><i class="fas fa-cogs"></i> Custom Properties</h4>
+                </div>
+                <div class="code-container">
+                    <pre><code>:root {
+  --primary-color: #4361ee;
+  --secondary-color: #7209b7;
+  --spacing: 1rem;
+}
+
+.variable-demo {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: var(--spacing);
+  margin: calc(var(--spacing) * 2);
+}</code></pre>
+                </div>
+                <div class="output-container">
+                    <div style="--primary-color: #4361ee; --secondary-color: #7209b7; --spacing: 1rem;">
+                        <div
+                            style="color: var(--primary-color); background: var(--secondary-color); padding: var(--spacing); margin: calc(var(--spacing) * 2); border-radius: 8px; color: white;">
+                            This element uses CSS variables for styling
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h3>CSS Animations</h3>
+
+            <div class="demo-card">
+                <div class="demo-header">
+                    <h4 class="demo-title"><i class="fas fa-film"></i> Keyframe Animations</h4>
+                </div>
+                <div class="code-container">
+                    <pre><code>@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: #4361ee;
+  border-radius: 8px;
+  animation: pulse 2s infinite;
+}</code></pre>
+                </div>
+                <div class="output-container" style="display: flex; justify-content: center;">
+                    <div class="animated-box"
+                        style="width: 100px; height: 100px; background: #4361ee; border-radius: 8px; animation: pulse 2s infinite; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                        Pulse
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

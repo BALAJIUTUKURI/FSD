@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .curriculum-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            justify-content: flex-start;
+        }
+
+
+        .topic-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .topic-list li {
+            list-style: none;
+            padding: 15px;
+            margin: 0;
+            border-bottom: 1px solid #e0e0e0;
+
+        }
+
+        .topic-list li i {
+            color: #007bff;
+            margin: 0px;
+
+        }
+
+        .module-content {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 70%;
+            overflow-y: auto;
+        }
+
+        .module-header h3 {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+
+        .module-header {
+            background-color: blue;
+            padding: 8px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .module {
+            width: 450px;
+            margin: 20px;
+        }
+
+        .section {
+            margin-left: 250px;
+            width: 65vw;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+
+        .beginner {
+            color: green;
+            font-weight: bold;
+            border: 1px solid green;
+            padding: 2px 5px;
+            border-radius: 10px;
+        }
+
+        .intermediate {
+            color: orange;
+            font-weight: bold;
+            border: 1px solid orange;
+            padding: 2px 5px;
+            border-radius: 10px;
+        }
+
+        .advanced {
+            color: red;
+            font-weight: bold;
+            border: 1px solid red;
+            padding: 2px 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="curriculum" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Learning Path</h2>
+                <p>Structured curriculum from fundamentals to advanced mastery</p>
+            </div>
+            <div class="curriculum-container">
+                <div class="module">
+                    <div class="module-header">
+                        <h3><i class="fas fa-code"></i> HTML5 Mastery</h3>
+                    </div>
+                    <div class="module-content">
+                        <ul class="topic-list">
+                            <li><i class="fas fa-check-circle"></i> HTML5 Document Structure</li>
+                            <li><i class="fas fa-check-circle"></i> Semantic Elements <span
+                                    class="level-indicator beginner">Beginner</span></li>
+                            <li><i class="fas fa-check-circle"></i> Forms & Validation <span
+                                    class="level-indicator intermediate">Intermediate</span></li>
+                            <li><i class="fas fa-check-circle"></i> Multimedia (Audio, Video)</li>
+                            <li><i class="fas fa-check-circle"></i> Canvas & SVG Graphics <span
+                                    class="level-indicator advanced">Advanced</span></li>
+                            <li><i class="fas fa-check-circle"></i> Web Storage (localStorage, sessionStorage)</li>
+                            <li><i class="fas fa-check-circle"></i> Geolocation API <span
+                                    class="level-indicator advanced">Advanced</span></li>
+                            <li><i class="fas fa-check-circle"></i> Drag and Drop API</li>
+                            <li><i class="fas fa-check-circle"></i> Web Workers <span
+                                    class="level-indicator advanced">Advanced</span></li>
+                            <li><i class="fas fa-check-circle"></i> Web Sockets</li>
+                            <li><i class="fas fa-check-circle"></i> Accessibility (ARIA roles)</li>
+                            <li><i class="fas fa-check-circle"></i> SEO Best Practices <span
+                                    class="level-indicator intermediate">Intermediate</span></li>
+                            <li><i class="fas fa-check-circle"></i> Web Components <span
+                                    class="level-indicator advanced">Advanced</span></li>
+                            <li><i class="fas fa-check-circle"></i> Progressive Web Apps</li>
+                            <li><i class="fas fa-check-circle"></i> Microdata & Structured Data</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-header">
+                        <h3><i class="fas fa-paint-brush"></i> CSS3 Mastery</h3>
+                    </div>
+                    <div class="module-content">
+                        <ul class="topic-list">
+                            <li><i class="fas fa-check-circle"></i> CSS Variables & Custom Properties <span
+                                    class="level-indicator intermediate">Intermediate</span></li>
+                            <li><i class="fas fa-check-circle"></i> Flexbox Layout System <span
+                                    class="level-indicator beginner">Beginner</span></li>
+                            <li><i class="fas fa-check-circle"></i> CSS Grid Layout <span
+                                    class="level-indicator intermediate">Intermediate</span></li>
+                            <li><i class="fas fa-check-circle"></i> Responsive Design (Media Queries)</li>
+                            <li><i class="fas fa-check-circle"></i> Transitions & Keyframe Animations <span
+                                    class="level-indicator intermediate">Intermediate</span></li>
+                            <li><i class="fas fa-check-circle"></i> Advanced Selectors & Pseudo-elements</li>
+                            <li><i class="fas fa-check-circle"></i> Transform, Filters & Blend Modes <span
+                                    class="level-indicator advanced">Advanced</span></li>
+                            <li><i class="fas fa-check-circle"></i> CSS Art & Creative Techniques</li>
+                            <li><i class="fas fa-check-circle"></i> CSS Architecture (BEM, OOCSS)</li>
+                            <li><i class="fas fa-check-circle"></i> Preprocessors (Sass, Less) <span
+                                    class="level-indicator advanced">Advanced</span></li>
+                            <li><i class="fas fa-check-circle"></i> Clip-path & Masking</li>
+                            <li><i class="fas fa-check-circle"></i> CSS Shapes <span
+                                    class="level-indicator advanced">Advanced</span></li>
+                            <li><i class="fas fa-check-circle"></i> Scroll Snap & Scroll Behavior</li>
+                            <li><i class="fas fa-check-circle"></i> Variable Fonts <span
+                                    class="level-indicator intermediate">Intermediate</span></li>
+                            <li><i class="fas fa-check-circle"></i> CSS Houdini <span
+                                    class="level-indicator advanced">Advanced</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

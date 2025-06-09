@@ -1,0 +1,40 @@
+.section-title {
+    text-align: center;
+}
+
+.demo-tabs li {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 18px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.active-tab {
+    background-color: #4361ee;
+}
+
+.demo-card {
+    background-color: grey;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.code-container {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.output-container {
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px;
+}
